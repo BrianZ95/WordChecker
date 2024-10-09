@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class WordChecker {
     /** Initialized in the constructor and contains no null elements */
     private ArrayList<String> wordList;
@@ -9,6 +10,12 @@ public class WordChecker {
      * Precondition: wordList contains at least two elements.
      * Postcondition: wordList is unchanged.
      */
+
+    public WordChecker(ArrayList<String> list)
+    {
+        wordList=list;
+        wordList = new ArrayList<String>();
+    }
     public boolean isWordChain() {
         /* to be implemented in part (a) */ }
 
